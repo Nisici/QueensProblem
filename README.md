@@ -1,5 +1,5 @@
 # QueensProblem
-A Python program to easily solve the n-queens problem using min-conflicts algorithm\
+A program to easily solve the n-queens problem using min-conflicts algorithm\
 \
 **Performances estimated with a sample of 1000 different queens placement.**
 | N queens| AVG steps |  
