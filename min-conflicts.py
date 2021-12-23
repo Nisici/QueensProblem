@@ -1,5 +1,8 @@
 import queens_problem as qs
 import random as rd
+
+# this algorithm is used to solve csp problems, given a csp and a max number of steps,
+# if the solution is not found in max_steps return error, otherwise print the number of steps taken and return the final state solution
 def min_conflicts(csp, max_steps):
     current = csp.initialValues
     k = 0
@@ -26,15 +29,3 @@ def conflicts(csp,var,current):
     min_val_indices = [i for i, j in enumerate(conflicts) if j == min_val]
     i = rd.randint(0,len(min_val_indices)-1)
     return min_val_indices[i]
-
-if __name__ == '__main__':
-    steps = 100000
-    Q = qs.csp_queens(500)
-    print("INITIAL STATE : ")
-    Q.printGrid(Q.initialValues)
-    ris_state = min_conflicts(Q,steps)
-    print("FINAL STATE : ")
-    if ris_state:
-        Q.printGrid(ris_state)
-    else:
-        print("SOLUTION NOT FOUND IN ", steps, " STEPS")
