@@ -1,4 +1,3 @@
-import queens_problem as qs
 import random as rd
 
 # this algorithm is used to solve csp problems, given a csp and a max number of steps,
