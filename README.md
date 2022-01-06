@@ -11,3 +11,4 @@ A program to easily solve the n-queens problem using min-conflicts algorithm\
 |50|506|
 |75|775
 |100|1114|
+|500|5200|
